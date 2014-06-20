@@ -1,0 +1,26 @@
+{"status":0,
+    "environment":"Sandbox",
+    "receipt":
+    {"receipt_type":"ProductionSandbox",
+        "adam_id":0,
+        "bundle_id":"<snip>",
+        "application_version":"1.0",
+        "download_id":0,
+        "request_date":"2013-11-12 01:43:06 Etc\/GMT",
+        "request_date_ms":"1384220586352",
+        "request_date_pst":"2013-11-11 17:43:06 America\/Los_Angeles",
+        "in_app":[
+                  {"quantity":"1",
+                      "product_id":"<snip>",
+                      "transaction_id":"1000000092978110",
+                      "original_transaction_id":"1000000092978110",
+                      "purchase_date":"2013-11-12 01:36:49 Etc\/GMT",
+                      "purchase_date_ms":"1384220209000",
+                      "purchase_date_pst":"2013-11-11 17:36:49 America\/Los_Angeles",
+                      "original_purchase_date":"2013-11-12 01:36:49 Etc\/GMT",
+                      "original_purchase_date_ms":"1384220209000",
+                      "original_purchase_date_pst":"2013-11-11 17:36:49 America\/Los_Angeles",
+                      "is_trial_period":"false"}
+                  ]
+    }
+}

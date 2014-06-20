@@ -1,0 +1,20 @@
+{
+    status: 0,
+    receipt: {
+      item_id: "662554154",
+      original_purchase_date: "2012-10-12 08:32:12 Etc/GMT",
+      purchase_date_pst: "2012-10-12 01:32:12 America/Los_Angeles",
+      purchase_date: "2012-10-12 08:32:12 Etc/GMT",
+      product_id: "com.example.mygame.tool1",
+      bid: "com.example.mygame",
+      version_external_identifier: "5647854",
+      bvrs: "1.0",
+      quantity: "1",
+      transaction_id: "8844567822225544",
+      app_item_id: "659563252",
+      original_purchase_date_ms: "1350030732000",
+      original_transaction_id: "8844567822225544",
+      purchase_date_ms: "1350030732000",
+      original_purchase_date_pst: "2012-10-12 01:32:12 America/Los_Angeles"
+    }
+  }

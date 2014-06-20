@@ -1,0 +1,33 @@
+{
+  receipt: {
+    in_app: [
+      {
+        is_trial_period: "false",
+        original_purchase_date_pst: "2013-10-09 20:55:27 America/Los_Angeles",
+        original_purchase_date_ms: "1386571707000",
+        original_purchase_date: "2013-10-09 04:55:27 Etc/GMT",
+        purchase_date_pst: "2013-10-09 20:55:27 America/Los_Angeles",
+        purchase_date_ms: "1386571707000",
+        purchase_date: "2013-10-09 04:55:27 Etc/GMT",
+        original_transaction_id: "654888452251325",
+        transaction_id: "654888452251325",
+        product_id: "com.example.mygame.tool1",
+        quantity: "1"
+      }
+    ],
+    original_application_version: "1.0",
+    original_purchase_date_pst: "2013-10-09 20:55:27 America/Los_Angeles",
+    original_purchase_date_ms: "1386569706000",
+    original_purchase_date: "2013-10-09 04:55:27 Etc/GMT",
+    request_date_pst: "2013-10-09 20:55:27 America/Los_Angeles",
+    request_date_ms: "1386571710087",
+    request_date: "2013-10-09 04:55:27 Etc/GMT",
+    download_id: 215425636588954,
+    application_version: "1.0",
+    bundle_id: "com.example.mygame",
+    adam_id: 654225311,
+    receipt_type: "Sandbox"
+  },
+  environment: "Sandbox",
+  status: 0
+}
