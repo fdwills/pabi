@@ -49,8 +49,7 @@ end
 |--------|------|-------------|
 | quantity | number | The number of items purchased. This value corresponds to the quantity property of the SKPayment object stored in the transaction’s payment property.|
 | product_id | string | The product identifier of the item that was purchased. This value corresponds to the productIdentifier property of the SKPayment object stored in the transaction’s payment property.|
-| transaction_id | string | The transaction identifier of the item that was purchased. This value corresponds to the transaction’s transactionII
-dentifier property.|
+| transaction_id | string | The transaction identifier of the item that was purchased. This value corresponds to the transaction’s transactionII dentifier property.|
 | purchase_date | DateTime | The date and time this transaction occurred. This value corresponds to the transaction’s transactionDate property. |
 | app_item_it | string | A string that the App Store uses to uniquely identify the application that created the payment transaction. If your server supports multiple applications, you can use this value to differentiate between them. Applications that are executing in the sandbox do not yet have an app-item-id assigned to them, so this key is missing from receipts created by the sandbox. |
 | version_external_identifier | string | An arbitrary number that uniquely identifies a revision of your application. This key is missing in receipts created by the sandbox.|
