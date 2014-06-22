@@ -10,7 +10,7 @@ module Pabi
       when SUCCEED
         @receipt = data
       else
-        @error = date
+        @error = data
       end
     end
 

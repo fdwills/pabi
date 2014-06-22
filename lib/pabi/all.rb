@@ -1,6 +1,6 @@
 require 'pabi/client'
 require 'pabi/drivers'
 require 'pabi/result'
-require 'pabi/error'
-require 'pabi/receipt'
+require 'pabi/errors'
+require 'pabi/receipts'
 require 'pabi/version'

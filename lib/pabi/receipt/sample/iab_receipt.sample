@@ -1,0 +1,7 @@
+{
+  "kind": "androidpublisher#inappPurchase",
+  "purchaseTime": long,
+  "purchaseState": integer,
+  "consumptionState": integer,
+  "developerPayload": string
+}

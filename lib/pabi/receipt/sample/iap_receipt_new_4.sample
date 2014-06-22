@@ -1,0 +1,27 @@
+{
+    'status': 0,
+    'environment': 'Sandbox',
+    'receipt': {
+        'download_id': 0,
+        'adam_id': 0,
+        'request_date': '2014-01-21 16:15:23 Etc/GMT',
+        'in_app': [{
+            'is_trial_period': 'false',
+            'purchase_date_pst': '2014-01-21 08:15:21 America/Los_Angeles',
+            'product_id': 'com.cinnamon.nepocujuci.lesson.6',
+            'original_transaction_id': '1000000098953824',
+            'original_purchase_date_pst': '2014-01-20 11:03:05 America/Los_Angeles',
+            'original_purchase_date': '2014-01-20 19:03:05 Etc/GMT',
+            'original_purchase_date_ms': '1390244585000',
+            'purchase_date': '2014-01-21 16:15:21 Etc/GMT',
+            'purchase_date_ms': '1390320921000',
+            'transaction_id': '1000000098953824',
+            'quantity': '1'
+        }],
+        'request_date_ms': '1390320923038',
+        'bundle_id': 'com.cinnamon.nepocujuci',
+        'request_date_pst': '2014-01-21 08:15:23 America/Los_Angeles',
+        'application_version': '1.0',
+        'receipt_type': 'ProductionSandbox'
+    }
+}
