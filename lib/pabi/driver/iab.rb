@@ -10,10 +10,11 @@ module Pabi
 
       # The package name of the application the inapp product was sold in (for example, 'com.some.thing').
       attr_reader :package_name
-      attr_reader :key
-      def initialize(env_code, package_name, key)
+      attr_reader :api_key
+
+      def initialize(env_code, package_name, api_key)
         @package_name = package_name
-        @key = key
+        @api_key = api_key
         case env_code
         when Pabi::Driver::SANDBOX
           super(:IAB, :SANDBOX, GOOGLE_DEVELOPMENT_ENDPOINT)
@@ -41,7 +42,7 @@ module Pabi
       def json_response_date(token, product_id)
         # make client
         # eg https://www.googleapis.com/androidpublisher/v1.1/applications/packageName/inapp/productId/purchases/token
-        uri = URI("#{self.url}#{self.package_name}/inapp/#{product_id}/purchases/#{token}")
+        uri = URI("#{self.url}#{self.package_name}/inapp/#{product_id}/purchases/#{token}?key=#{self.api_key}")
         http = Net::HTTP.new(uri.host, uri.port)
         http.use_ssl = true
         http.verify_mode = OpenSSL::SSL::VERIFY_PEER

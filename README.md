@@ -23,7 +23,7 @@ or include in Gemfile
 
 Iap server-side receipt validation need a receipt
 
-sample
+#### Sample Code
 
 ```ruby
 require "pabi"
@@ -71,6 +71,8 @@ see [here](https://developer.apple.com/library/ios/releasenotes/General/Validate
 | expiration_date | DateTime | The date that the app receipt expires.
 | in_app | array(SubReceipt) | The receipt for an in-app purchase. (see below)|
 
+In-app purchase object
+
 | method | type | description |
 |--------|------|-------------|
 | product_id | string | The product identifier of the item that was purchased. |
@@ -87,16 +89,39 @@ see [here](https://developer.apple.com/library/ios/releasenotes/General/Validate
 
 ### Iab
 
-Iab server receipt validation needs a receipt data, aandroid package name and a token.
+Iab server receipt validation needs a receipt data, android package name and a token.
 
-Only purchase made by In-app Billing v3 can be retrivaled.
+Only purchase made by __In-app Billing v3__ can be retrivaled.
 
 see [here](https://developers.google.com/android-publisher/v1_1/inapppurchases) and also [here](https://developer.android.com/google/play/billing/gp-purchase-status-api.html)
 
+#### Sample Code
+
+```ruby
+require "pabi"
+
+# initial a new client for validation(SANDBOX / PRODUCT)
+# initial client also need a android package name
+# initial client also need api key
+client = Pabi::client.new(:IAB, Pabi::Driver::SANDBOX, "package_name", "api_key")
+
+# validate a receipt string
+# validate a receipt also nedd a product id
+result = client.validate("receipt_string", "product_id")
+
+if result.succeed?
+  receipt = result.receipt
+  # do something with receipt
+else
+  error = result.error
+  # do something with error
+```
+
+#### Iab Receipt
+
 | method | type | description |
 |--------|------|-------------|
-| consumptionState | integer |The consumption state of the inapp product. Possible values are - 0: Yet to be consumed
-, 1: Consumed |
+| consumptionState | integer |The consumption state of the inapp product. Possible values are - 0: Yet to be consumed, 1: Consumed |
 | developerPayload | string | A developer-specified string that contains supplemental information about an order. |
 | kind | string | This kind represents an inappPurchase object in the androidpublisher service. |
 | purchaseState | number | The purchase state of the order. Possible values are - 0: Purchased, 1: Cancelled |

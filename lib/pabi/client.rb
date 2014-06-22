@@ -4,14 +4,14 @@ module Pabi
   class Client
     attr_reader :driver
 
-    def initialize(type, mode, *args)
+    def initialize(type, mode, *argvs)
       case type
       when :IAP
         # new iap driver
         @driver = Driver::Iap.new(mode)
       when :IAB
         # new iab driver
-        @driver = Driver::Iab.new(mode, args[0], args[1])
+        @driver = Driver::Iab.new(mode, argvs[0], argvs[1])
       else
         raise Pabi::Error::NoDriverError.new
       end

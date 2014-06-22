@@ -39,7 +39,7 @@ describe Pabi::Client do
   describe "#iab" do
     context "with iab invalid receipt" do
       let(:raw_receipt) { "asaadfdafssaaad" }
-      let(:iab_sandbox_client) { Pabi::Client.new(:IAB, 0, 'aaa', 'sss') }
+      let(:iab_sandbox_client) { Pabi::Client.new(:IAB, 0, 'aaa', 'api-key') }
 
       it "should new and validate success" do
         expect(iab_sandbox_client.driver).to be_an_instance_of(Pabi::Driver::Iab)
